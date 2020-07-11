@@ -6,6 +6,7 @@ Date Modified:  Jul 30, 2019
 Author: Tech With Tim
 Estimated Work Time: 5 hours (1 just for that damn collision)
 """
+import cv2
 import pygame
 import random
 import os
@@ -36,10 +37,10 @@ class Bird:
     """
     Bird class representing the flappy bird
     """
-    MAX_ROTATION = 25
+    MAX_ROTATION = 45
     IMGS = bird_images
     ROT_VEL = 20
-    ANIMATION_TIME = 5
+    ANIMATION_TIME = 35
 
     def __init__(self, x, y):
         """
